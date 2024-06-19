@@ -21,7 +21,7 @@ export default function Gallery({position}){
         <div class="w-3/4">
         <div class="flex flex-col">
             <div class=" lg:p-5 lg:w-1/2 self-center">
-                 <Image class="rounded-full p-2 lg:p-10 bg-miamiTeal" src={bakedGoods[Math.abs(position%bakedGoods.length)].image}/>
+                 <Image class="rounded-full p-2 lg:p-10 bg-miamiTeal" src={bakedGoods[Math.abs(position%bakedGoods.length)].image} alt='cake'/>
             </div>
             <div class=" flex flex-col lg:p-2 justify-center mt-7 lg:mt-0">
                 <h2 class="font-bold font-serif flex justify-center text-center text-3xl">{bakedGoods[Math.abs(position%bakedGoods.length)].title}</h2>

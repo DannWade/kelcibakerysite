@@ -8,6 +8,8 @@ import flowerMacs from '../public/images/6.JPG'
 import { useState } from 'react';
 import { ContactUs } from './ContactUs';
 import {Parallax, ParallaxLayer} from '@react-spring/parallax'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheese, faCircleArrowRight, faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Page({
@@ -27,13 +29,16 @@ export default function Page({
   <>
   <section>
     <div class="lg:mt-5 mb-0 lg:mb-20 flex flex-col lg:flex-row p-10">
-      <Image class="self-center w-3/4 lg:w-1/2 ml-5 p-2 lg:p-10 origin-bottom -rotate-6 bg-gradient-to-tr from-amber-100 to-miamiOrange" src={macaron} />
-      <h1 class="text-6xl lg:text-9xl font-serif mt-10 lg:mt-0">Welcome to Kelci's Bakery</h1>
+      <Image class="self-center w-3/4 lg:w-1/2 ml-5 p-2 lg:p-10 origin-bottom -rotate-6 bg-gradient-to-tr from-amber-100 to-miamiOrange" src={macaron} alt='macaron' />
+      <h1 class="text-6xl lg:text-9xl font-serif mt-10 lg:mt-0">Welcome to Kelci&apos;s Bakery</h1>
     </div>
     <ol class="mt-3 mb-20 flex flex-row justify-center space-x-5">
-        <i class="fa-solid fa-cheese fa-2x opacity-20" style={{color: '#0f4953',}} ></i>
+        <FontAwesomeIcon icon={faCheese} size="2xl" style={{color: '#0f4953',opacity: 0.2}}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faCheese} size="2xl" style={{color: '#CBF5EF',opacity: 1}}></FontAwesomeIcon>
+        <FontAwesomeIcon icon={faCheese} size="2xl" style={{color: '#FFCFD2',opacity: 1}}></FontAwesomeIcon>
+        {/* <i class="fa-solid fa-cheese fa-2x opacity-20" style={{color: '#0f4953',}} ></i>
         <i class="fa-solid fa-cheese fa-2x opacity-100" style={{color: '#CBF5EF',}} ></i>
-        <i class="fa-solid fa-cheese fa-2x opacity-100" style={{color: '#FFCFD2',}} ></i>
+        <i class="fa-solid fa-cheese fa-2x opacity-100" style={{color: '#FFCFD2',}} ></i> */}
     </ol>
     {/* <div class="flex justify-center m-3 lg:h-20">
       <button onClick={() => {
@@ -45,11 +50,11 @@ export default function Page({
     </div> */}
   </section>
   <section class="h-2000">
-    <Image class="opacity-50" src={window.innerWidth < 400 ? flowerMacs : Counter}/>
+    <Image class="opacity-50" src={window.innerWidth < 400 ? flowerMacs : Counter} alt='counter'/>
   </section>
   <ParallaxLayer offset={window.innerWidth < 400 ? 1 : 1.9} speed={1} factor={1} style={{opacity:1}}>
   <section class="flex flex-col p-10 lg:p-20 bg-miamiGreen" id="kelcibio">
-    <Image class="self-center w-9/12 lg:w-1/2 p-2 lg:p-10 bg-miamiOrange" src={kelci}></Image>
+    <Image class="self-center w-9/12 lg:w-1/2 p-2 lg:p-10 bg-miamiOrange" src={kelci} alt='kelci'></Image>
       <div class="lg:flex lg:flex-col justify-center">
         <h2 class="m-2 text-base lg:text-2xl text-center text-miamiWhite">About The Baker</h2>
         <p class="m-2 text-sm lg:text-xl text-miamiWhite">Hello, my name is Kelci! I am a professional baker with 5 years experience. I love seeing the excitement that comes from great tasting, beutiful pastries but more than that is knowing it is an experience shared with others. </p>
@@ -71,11 +76,13 @@ export default function Page({
     <div>
       <div class="flex justify-center">
           <button onClick={handleDecrement} class="m-2">
-            <i class="fa-solid fa-circle-arrow-left fa-3x" style={{color: '#0F4953',}} ></i>
+          <FontAwesomeIcon icon={faCircleArrowLeft} size="3x" style={{color: '#0F4953',}}></FontAwesomeIcon>
+            {/* <i class="fa-solid fa-circle-arrow-left fa-3x" style={{color: '#0F4953',}} ></i> */}
           </button>
         <Gallery position={index}></Gallery>
         <button onClick={handleIncrement} class="m-2">
-          <i class="fa-solid fa-circle-arrow-right fa-3x" style={{color: '#0F4953',}} ></i>
+        <FontAwesomeIcon icon={faCircleArrowRight} size="3x" style={{color: '#0F4953',}}></FontAwesomeIcon>
+          {/* <i class="fa-solid fa-circle-arrow-right fa-3x" style={{color: '#0F4953',}} ></i> */}
         </button>
       </div>
     </div>

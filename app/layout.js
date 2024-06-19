@@ -3,7 +3,6 @@ import emailjs from '@emailjs/browser';
 import './globals.css'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import React, { useState, useEffect, useRef} from 'react';
-let windowLength = 0
 
 export default function RootLayout({
   children,
@@ -19,9 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet"></link>
-        <script src="https://kit.fontawesome.com/6b8a3dd54a.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin></link>
+        {/*below - synchronus scripts should not be used at production(import fontawsome instead */}
+        {/* <script src="https://kit.fontawesome.com/6b8a3dd54a.js" crossOrigin="anonymous"></script> */} 
       </head>
       <body>
         <Parallax pages={pageRef}>
