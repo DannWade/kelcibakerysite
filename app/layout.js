@@ -24,7 +24,7 @@ export default function RootLayout({
       </head>
       <body>
         <Parallax pages={pageRef}>
-        <header class="h-15 mb-10">
+        <header class="h-15">
           <ol class="flex flex-row justify-around">
             <h2 class='font-medium text-2xl text-miamiTeal font-serif'>Cakes</h2>
             <h2 class='font-medium text-2xl text-miamiTeal font-serif'>Macarons</h2>
