@@ -32,7 +32,7 @@ export default function Page({
       <Image class="self-center w-3/4 lg:w-1/2 ml-5 p-2 lg:p-10 origin-bottom -rotate-6 bg-gradient-to-tr from-amber-100 to-miamiOrange" src={macaron} alt='macaron' />
       <h1 class="text-6xl lg:text-9xl font-serif mt-10 lg:mt-0">Welcome to Kelci&apos;s Bakery</h1>
     </div>
-    <ol class="mt-3 mb-20 flex flex-row justify-center space-x-5">
+    <ol class="mb-20 flex flex-row justify-center space-x-5">
         <FontAwesomeIcon icon={faCheese} size="2xl" style={{color: '#0f4953',opacity: 0.2}}></FontAwesomeIcon>
         <FontAwesomeIcon icon={faCheese} size="2xl" style={{color: '#CBF5EF',opacity: 1}}></FontAwesomeIcon>
         <FontAwesomeIcon icon={faCheese} size="2xl" style={{color: '#FFCFD2',opacity: 1}}></FontAwesomeIcon>
