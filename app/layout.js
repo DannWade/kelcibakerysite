@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 import './globals.css'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import React, { useState, useEffect, useRef} from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact, } from "@fortawesome/free-solid-svg-icons";
+
 
 export default function RootLayout({
   children,
@@ -68,7 +71,7 @@ export default function RootLayout({
             </ul> 
             <ul class="mx-8">
               <li class="text-center text-white">Powered by:</li>
-              <li class="text-center text-white"><i class="fa-brands fa-react"></i> React</li>
+              <li class="text-center text-white">React</li>
               <li class="text-center text-white">Next.js</li>
               <li class="text-center text-white">TailwindCSS</li>
             </ul>

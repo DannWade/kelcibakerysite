@@ -64,12 +64,14 @@ export default function Page({
   </ParallaxLayer>
   <ParallaxLayer offset={window.innerWidth < 400 ? 2.7 : 2.5} factor={1/12} speed={2.5}>
     <section>
-      <i class="fa-solid fa-cheese fa-3x ml-80 opacity-30" style={{color: '#0f4953',}} ></i>
+      <FontAwesomeIcon icon={faCheese} size="3x" style={{color: '#0f4953',opacity: 0.3,marginLeft: 200}}></FontAwesomeIcon>
+      {/* <i class="fa-solid fa-cheese fa-3x ml-80 opacity-30" style={{color: '#0f4953',}} ></i> */}
     </section>
   </ParallaxLayer>
   <ParallaxLayer offset={window.innerWidth < 400 ? 2.7 : 2.5} factor={1/12} speed={1.5}>
     <section>
-      <i class="fa-solid fa-cheese fa-3x ml-20 opacity-30" style={{color: '#F98E6E',}} ></i>
+      <FontAwesomeIcon icon={faCheese} size="3x" style={{color: '#CBF5EF',opacity: 1,marginLeft:60}}></FontAwesomeIcon>
+      {/* <i class="fa-solid fa-cheese fa-3x ml-20 opacity-30" style={{color: '#F98E6E',}} ></i> */}
     </section>
   </ParallaxLayer>
   <section class="flex justify-center mt-20 mb-20 lg:m-20" id="portfolio">
