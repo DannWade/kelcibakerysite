@@ -57,20 +57,20 @@ export default function Page({
     <Image class="self-center w-9/12 lg:w-1/2 p-2 lg:p-10 bg-miamiOrange" src={kelci} alt='kelci'></Image>
       <div class="lg:flex lg:flex-col justify-center">
         <h2 class="m-2 text-base lg:text-2xl text-center text-miamiWhite">About The Baker</h2>
-        <p class="m-2 text-sm lg:text-xl text-miamiWhite">Hello, my name is Kelci! I am a professional baker with 5 years experience. I love seeing the excitement that comes from great tasting, beutiful pastries but more than that is knowing it is an experience shared with others. </p>
-        <p class="m-2 text-sm lg:text-xl text-miamiWhite">I believe food brings people and is a source of happiness. I aspire to share good food and good memories with as many people as possible. I love to make cakes and pastries that are simple but elegant - something you want to go back or more of. Baking is a small way to make people smile.</p>
+        <p class="m-2 text-sm lg:text-xl text-miamiWhite">Hello, my name is Kelci, I am a professional baker with 5 years experience. I love seeing the excitement that comes from great tasting, beautiful pastries but beyond the flavor I enjoy that good food brings people together. </p>
+        <p class="m-2 text-sm lg:text-xl text-miamiWhite">I believe food is a source of happiness and connection. I aspire to share great food and enduring memories with as many people as possible. I love to make cakes and pastries that are simple but elegant - something you want to go back for more of. Baking is a small way to make people smile.</p>
       </div>
   </section>
   </ParallaxLayer>
-  <ParallaxLayer offset={window.innerWidth < 400 ? 2.7 : 2.5} factor={1/12} speed={2.5}>
+  <ParallaxLayer offset={window.innerWidth < 400 ? 2 : 2.5} factor={1/12} speed={2.5}>
     <section>
       <FontAwesomeIcon icon={faCheese} size="3x" style={{color: '#0f4953',opacity: 0.3,marginLeft: 200}}></FontAwesomeIcon>
       {/* <i class="fa-solid fa-cheese fa-3x ml-80 opacity-30" style={{color: '#0f4953',}} ></i> */}
     </section>
   </ParallaxLayer>
-  <ParallaxLayer offset={window.innerWidth < 400 ? 2.7 : 2.5} factor={1/12} speed={1.5}>
+  <ParallaxLayer offset={window.innerWidth < 400 ? 2 : 2.5} factor={1/12} speed={1.5}>
     <section>
-      <FontAwesomeIcon icon={faCheese} size="3x" style={{color: '#CBF5EF',opacity: 1,marginLeft:60}}></FontAwesomeIcon>
+      <FontAwesomeIcon icon={faCheese} size="3x" style={{color: '#CBF5EF',opacity:.7,marginLeft:60}}></FontAwesomeIcon>
       {/* <i class="fa-solid fa-cheese fa-3x ml-20 opacity-30" style={{color: '#F98E6E',}} ></i> */}
     </section>
   </ParallaxLayer>
