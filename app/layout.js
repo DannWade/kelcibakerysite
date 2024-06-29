@@ -4,8 +4,8 @@ import './globals.css'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import React, { useState, useEffect, useRef} from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, } from "@fortawesome/free-solid-svg-icons";
-
+// must add the brand package from fontawsome, not solid package for most other icons
+import { faReact,faInstagram, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"; 
 
 export default function RootLayout({
   children,
@@ -64,16 +64,16 @@ export default function RootLayout({
             </div>
             <div class="flex flex-row justify-center">
             <ul class="flex flex-col mx-8">
-              <li class="text-center text-white"><i class="fa-regular"></i></li>
-              <a href='https://www.instagram.com/kwade_17/'><li class="text-center text-white"><i class="fa-brands fa-instagram"></i> Instagram</li></a>
-              <a href='https://github.com/DannWade'><li class="text-center text-white"><i class="fa-brands fa-github"></i> GitHub</li></a>
-              <a href='https://www.linkedin.com/in/kelci-brizzee-wade-889736254/'><li class="text-center text-white"><i class="fa-brands fa-linkedin"></i> LinkdIn</li></a>
+              <li class="text-center text-white"><i class="fa-regular"></i>Social:</li>
+              <a href='https://www.instagram.com/kwade_17/'><li class="text-center text-white"><i class="fa-brands fa-instagram"></i><FontAwesomeIcon icon={faInstagram} size="xl" style={{color: '#F9FCFB'}}></FontAwesomeIcon> Instagram</li></a>
+              <a class="mt-1" href='https://github.com/DannWade'><li class="text-center text-white"><i class="fa-brands fa-github"></i><FontAwesomeIcon icon={faGithub} size="xl" style={{color: '#F9FCFB'}}></FontAwesomeIcon> GitHub</li></a>
+              <a class='mt-1' href='https://www.linkedin.com/in/kelci-brizzee-wade-889736254/'><li class="text-center text-white"><i class="fa-brands fa-linkedin"></i><FontAwesomeIcon icon={faLinkedin} size="xl" style={{color: '#F9FCFB'}}></FontAwesomeIcon> LinkdIn</li></a>
             </ul> 
             <ul class="mx-8">
               <li class="text-center text-white">Powered by:</li>
-              <li class="text-center text-white">React</li>
-              <li class="text-center text-white">Next.js</li>
-              <li class="text-center text-white">TailwindCSS</li>
+              <li class="text-center text-white"><FontAwesomeIcon icon={faReact} size="xl" style={{color: '#F9FCFB'}}></FontAwesomeIcon> React</li>
+              <li class="text-center text-white mt-1">Next.js</li>
+              <li class="text-center text-white mt-1">TailwindCSS</li>
             </ul>
             </div>
           </div>
